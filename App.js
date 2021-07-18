@@ -21,6 +21,7 @@ function HomeScreen({navigation}) {
     {
       headerRight:()=>(
         <Button title="save" 
+        color = "#841584"
         onPress={() => {
           navigation.replace('Home');
         }}
@@ -39,7 +40,7 @@ function SettingsScreen() {
   const isFocused = useIsFocused()
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text style={{color:isFocused?'green':'black'}}>Setting Screen</Text>
+      <Text style={{color:isFocused?'blue':'black'}}>Setting Screen</Text>
     </View>
   );
 }
